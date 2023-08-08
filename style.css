@@ -115,7 +115,7 @@ button {
 
 section {
   display: flex;
-  width: 60%;
+  width: 75%;
   margin: 90px auto;
   padding: 80px;
   background-color: beige;
@@ -126,14 +126,31 @@ section {
 
 .project {
   width: 400px;
+  margin-right: 50px;
+}
+
+.project h2 {
+  margin-bottom: 20px;
+}
+
+.project h2 span {
+  background-color: aqua;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.project p {
+  text-align: justify;
 }
 
 .info {
   display: flex;
+  padding: 10px 150px 10px 10px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.info a {
+.info .contak {
   background-color: black;
   color: white;
   padding: 5px 15px;
@@ -143,5 +160,14 @@ section {
 
 .info h3 {
   flex: 30%;
-  display: flex;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.info i {
+  padding: 5px;
+}
+
+.linkedin a {
+  margin: 10px;
 }
