@@ -31,7 +31,7 @@ nav ul li img {
 
 .nav-left ul li a:hover {
   background-color: aqua;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .nav-left {
@@ -53,6 +53,7 @@ nav ul li img {
 
 .nav-right a:hover {
   background-color: aqua;
+  color: black;
 }
 
 form {
@@ -115,6 +116,7 @@ button {
 
 button:hover {
   background-color: aqua;
+  color: black;
 }
 
 section {
@@ -160,6 +162,11 @@ section {
   padding: 5px 15px;
   border-radius: 10px;
   gap: 10px;
+}
+
+.info .contak:hover {
+  background-color: aqua;
+  color: black;
 }
 
 .info h3 {
