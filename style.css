@@ -113,6 +113,10 @@ button {
   border-style: none;
 }
 
+button:hover {
+  background-color: aqua;
+}
+
 section {
   display: flex;
   width: 75%;
