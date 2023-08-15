@@ -15,7 +15,7 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Kartu Keren</title>
   </head>
   <body>
@@ -25,17 +25,47 @@
           <li class="image">
             <a href="#"><img src="asset/logo.png" alt="logo" /></a>
           </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">My Project</a></li>
+          <li class="item-collapse"><a href="blog.html">Home</a></li>
+          <li class="item-collapse"><a href="project.html">My Project</a></li>
         </ul>
       </div>
 
-      <div class="nav-right">
-        <ul>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
+      <div class="nav-right-item-collapse">
+        <a href="index.html">Contact Me</a>
+      </div>
+
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="blog.html">Home</a>
+      <a href="project.html" class="hamburger-active">My Project</a>
+      <a href="index.html">
+        <button
+          style="
+            background-color: black;
+            width: 100px;
+            padding: 7px;
+            margin: 5px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        >
+          Contact Me
+        </button>
+      </a>
+    </div>
 
     <section>
       <div class="project">
@@ -67,10 +97,11 @@
       </div>
 
       <div
+        class="card"
         style="
           width: 350px;
           border: 1px solid black;
-          margin-left: 50px;
+          margin-bottom: 50px;
           padding: 10px;
           border-radius: 10px;
           box-shadow: 0 0 15px #cecece;
@@ -108,5 +139,7 @@
         </table>
       </div>
     </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
