@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/testimonial.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li class="image">
+            <a href="#"><img src="asset/logo.png" alt="logo" /></a>
+          </li>
+          <li class="item-collapse"><a href="blog.html">Home</a></li>
+          <li class="item-collapse"><a href="project.html">My Project</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right-item-collapse">
+        <a href="index.html">Contact Me</a>
+      </div>
+
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin: 0;
+          "
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="blog.html" class="hamburger-active">Home</a>
+      <a href="project.html">My Project</a>
+      <a href="index.html">
+        <button
+          style="
+            background-color: black;
+            width: 110px;
+            padding: 7px;
+            margin: 5px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        >
+          Contact Me
+        </button>
+      </a>
+    </div>
+
+    <!-- testimonials list -->
+    <div class="container">
+      <h1>Customer Testimonials</h1>
+      <div class="testimonials" id="testimonials">
+        <!-- <div class="testimonial">
+          <img
+            src="asset/bumn.jpg"
+            alt="customer-profile"
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            nesciunt!
+          </p>
+          <p class="author">- Erick Thohir</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="asset/yeji.jpeg"
+            alt="customer-profile"
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            nesciunt!
+          </p>
+          <p class="author">- Hwang Yeji</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="asset/tom.jpg"
+            alt="customer-profile"
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            nesciunt!
+          </p>
+          <p class="author">- Tom Cruise</p>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="js/testimonial.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
