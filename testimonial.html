@@ -27,6 +27,9 @@
           </li>
           <li class="item-collapse"><a href="blog.html">Home</a></li>
           <li class="item-collapse"><a href="project.html">My Project</a></li>
+          <li class="item-collapse">
+            <a href="testimonial.html">Testimonials</a>
+          </li>
         </ul>
       </div>
 
@@ -50,8 +53,9 @@
     </nav>
 
     <div class="hamburger-nav-container" id="hamburger-nav-container">
-      <a href="blog.html" class="hamburger-active">Home</a>
+      <a href="blog.html">Home</a>
       <a href="project.html">My Project</a>
+      <a href="testimonial.html" class="hamburger-active">Testimonials</a>
       <a href="index.html">
         <button
           style="
@@ -75,6 +79,27 @@
     <!-- testimonials list -->
     <div class="container">
       <h1>Customer Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonials()">All</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
       <div class="testimonials" id="testimonials">
         <!-- <div class="testimonial">
           <img
