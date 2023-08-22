@@ -1,7 +1,7 @@
 const testimonial = new Promise((resolve, reject) => {
   const xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "https://www.npoint.io/docs/0c8c88d5267dcfc69113", true);
+  xhr.open("GET", "https://api.npoint.io/0c8c88d5267dcfc69113", true);
 
   xhr.onload = function () {
     if (xhr.status == 200) {
@@ -40,3 +40,31 @@ async function showTestimonial() {
   }
 }
 showTestimonial();
+
+async function filterTestimonials(rating) {
+  try {
+    const response = await testimonial;
+    let testimonialForHTML = "";
+
+    const dataFiltered = response.filter(function (data) {
+      return data.rating === rating;
+    });
+
+    if (dataFiltered.length === 0) {
+      testimonialForHTML = `<h3>Data not found!</h3>`;
+    } else {
+      dataFiltered.forEach((data) => {
+        testimonialForHTML += `<div class="testimonial">
+                <img src="${data.image}" class="profile-testimonial" />
+                <p class="quote">${data.quote}</p>
+                <p class="author">- ${data.author}</p>
+                <p class="author">${data.rating}<i class="fa-solid fa-star"></i></p>
+            </div>`;
+      });
+    }
+
+    document.getElementById("testimonials").innerHTML = testimonialForHTML;
+  } catch (err) {
+    console.log(err);
+  }
+}
